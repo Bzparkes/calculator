@@ -10,11 +10,16 @@
 
 //console.log(num2 * num9)
 
-const display = document.querySelector('section')
+let num;
+const pressNum = document.querySelector('button');
+const displayNum = document.querySelector('section');
+
+pressNum.addEventListener('click', enterNumber(num));
 
 function enterNumber(num) {
      return num;
-    //Takes the button pressed and enters that value
+     
+    //Takes the button pressed, enters that value and prints to display
 }
 
 function addition() {
