@@ -51,27 +51,39 @@ button {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    width: 150px;
+    width: 250px;
+    height: 50px;
     margin: auto;
+    margin-bottom: 80px;
 }
 
 .equals {
+    background-color: black;
+    font-size: 60px;
+}
+
+.decimal {
+    align-items: flex-end;
+    background-color: black;
+    font-size: 60px;    
+}
+
+.clear-entry,
+.all-clear {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    padding: 5px;
-    font-size: 60px;
-    text-align: center;
+    margin: auto;
+    width: 150px;
 }
 
-button.decimal {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: black;
-    padding: 5px;
-    font-size: 60px;
-    
+.clear-entry {
+    background-color: whitesmoke;
+    color: red;
+}
+
+.all-clear {
+    background-color: red;
+    color: whitesmoke;
 }
 
