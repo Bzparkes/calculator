@@ -24,6 +24,17 @@ section {
     font-size: 40px
 }
 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(63, 63, 63);
+    font-size: x-large;
+}
+
 .numbers {
     display: flex;
     flex-wrap: wrap;
@@ -49,14 +60,18 @@ section {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 30px;
+    padding: 5px;
     font-size: 60px;
+    text-align: center;
 }
 
-button {
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(63, 63, 63);
-    font-size: x-large;
+button.decimal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    padding: 5px;
+    font-size: 60px;
+    
 }
+
