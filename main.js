@@ -1,4 +1,5 @@
 const numDisplay = document.querySelector('body > section')
+
 const num1 = document.querySelector('body > div.numbers > button:nth-child(1)');
 const num2 = document.querySelector('body > div.numbers > button:nth-child(2)');
 const num3 = document.querySelector('body > div.numbers > button:nth-child(3)');
@@ -21,8 +22,8 @@ const allClearButton = document.querySelector('body > div:nth-child(5) > button.
 
 numDisplay.textContent = '0.00';
 
-
-//console.log(num2 * num9)
+const buttons = document.getElementsByClassName('numbers');
+console.log(buttons);
 
 
 
@@ -31,7 +32,7 @@ function enterNumber(num) {
      console.log(num);
     //Takes the button pressed, enters that value and prints to display
 }
-enterNumber(1)
+
 
 function addition() {
     return;
