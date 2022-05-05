@@ -19,7 +19,7 @@ const equalsButton = document.querySelector('body > div.summation > button.equal
 const clearEntryButton = document.querySelector('body > div:nth-child(5) > button.clear-entry');
 const allClearButton = document.querySelector('body > div:nth-child(5) > button.all-clear');
 
-
+numDisplay.textContent = '0.00';
 
 
 //console.log(num2 * num9)
