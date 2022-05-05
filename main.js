@@ -1,12 +1,26 @@
-// const num1 = 1;
-// const num2 = 2;
-// const num3 = 3;
-// const num4 = 4;
-// const num5 = 5;
-// const num6 = 6;
-// const num7 = 7;
-// const num8 = 8;
-// const num9 = 9;
+const numDisplay = document.querySelector('body > section')
+const num1 = document.querySelector('body > div.numbers > button:nth-child(1)');
+const num2 = document.querySelector('body > div.numbers > button:nth-child(2)');
+const num3 = document.querySelector('body > div.numbers > button:nth-child(3)');
+const num4 = document.querySelector('body > div.numbers > button:nth-child(4)');
+const num5 = document.querySelector('body > div.numbers > button:nth-child(5)');
+const num6 = document.querySelector('body > div.numbers > button:nth-child(6)');
+const num7 = document.querySelector('body > div.numbers > button:nth-child(7)');
+const num8 = document.querySelector('body > div.numbers > button:nth-child(8)');
+const num9 = document.querySelector('body > div.numbers > button:nth-child(9)');
+
+const plusButton = document.querySelector('body > div.summation > button.add');
+const minusButton = document.querySelector('body > div.summation > button.subtract');
+const divideButton = document.querySelector('body > div.summation > button.divide');
+const multiplyButton = document.querySelector('body > div.summation > button.multiply');
+const decimalButton = document.querySelector('body > div.summation > button.decimal')
+const equalsButton = document.querySelector('body > div.summation > button.equals')
+
+const clearEntryButton = document.querySelector('body > div:nth-child(5) > button.clear-entry');
+const allClearButton = document.querySelector('body > div:nth-child(5) > button.all-clear');
+
+numDisplay.textContent = '0.00';
+
 
 //console.log(num2 * num9)
 
