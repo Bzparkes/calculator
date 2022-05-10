@@ -20,10 +20,16 @@ const equalsButton = document.querySelector('body > div.summation > button.equal
 const clearEntryButton = document.querySelector('body > div:nth-child(5) > button.clear-entry');
 const allClearButton = document.querySelector('body > div:nth-child(5) > button.all-clear');
 
-numDisplay.textContent = '0.00';
+// numDisplay.textContent = '0.00';
 
-const buttons = document.getElementsByClassName('numbers');
-console.log(buttons);
+const buttons = document.querySelectorAll('button');
+const arithmatic = document.querySelector('#arithmatic');
+console.log(arithmatic);
+
+arithmatic.addEventListener('click', e => {
+    // console.log(e);
+    numDisplay.textContent += `${e.target.value}`;
+});
 
 
 
