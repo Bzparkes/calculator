@@ -1,78 +1,38 @@
 const numDisplay = document.querySelector('body > section')
 
-const num1 = document.querySelector('body > div.numbers > button:nth-child(1)');
-const num2 = document.querySelector('body > div.numbers > button:nth-child(2)');
-const num3 = document.querySelector('body > div.numbers > button:nth-child(3)');
-const num4 = document.querySelector('body > div.numbers > button:nth-child(4)');
-const num5 = document.querySelector('body > div.numbers > button:nth-child(5)');
-const num6 = document.querySelector('body > div.numbers > button:nth-child(6)');
-const num7 = document.querySelector('body > div.numbers > button:nth-child(7)');
-const num8 = document.querySelector('body > div.numbers > button:nth-child(8)');
-const num9 = document.querySelector('body > div.numbers > button:nth-child(9)');
-
-const plusButton = document.querySelector('body > div.summation > button.add');
-const minusButton = document.querySelector('body > div.summation > button.subtract');
-const divideButton = document.querySelector('body > div.summation > button.divide');
-const multiplyButton = document.querySelector('body > div.summation > button.multiply');
-const decimalButton = document.querySelector('body > div.summation > button.decimal')
-const equalsButton = document.querySelector('body > div.summation > button.equals')
-
-const clearEntryButton = document.querySelector('body > div:nth-child(5) > button.clear-entry');
-const allClearButton = document.querySelector('body > div:nth-child(5) > button.all-clear');
-
 // numDisplay.textContent = '0.00';
 
 const arithmatic = document.querySelector('#arithmatic');
-<<<<<<< HEAD
-// console.log(arithmatic);
 
 
 arithmatic.addEventListener('click', e => {
     numDisplay.textContent += `${e.target.value}`;
-=======
-
-// arithmatic.addEventListener('click', e => {
-//     numDisplay.textContent = '';
-// });
-
-arithmatic.addEventListener('click', e => {
-    // numDisplay.textContent += `${e.target.value}`;
     console.log(e.target.value);
->>>>>>> 994115f91be387ce3c37983c50f0cca84bf07845
 });
 
-//console.log(num2 * num9)
-
-
-function enterNumber(num) {
-     //return num;
-     console.log(num);
-    //Takes the button pressed, enters that value and prints to display
-}
-enterNumber(1)
-
-function addition() {
-    return;
+function addition(e) {
+    return e.target.value + e.target.value;
+    
     //Adds new number to previous number
 }
 
-function subtraction() {
-    return;
+function subtraction(e) {
+    return e.target.value - e.target.value;
     //Subtracts the new number from the previous number
 }
 
-function multiply() {
-    return num1 * num2;
+function multiply(e) {
+    return e.target.value * e.target.value;;
     //Multiplies the previous number by the new number
 }
 
-function divide() {
-    return num1 / num2;
+function divide(e) {
+    return e.target.value / e.target.value;;
     //Divides the previous number by the new number
 }
 
 function equals() {
-    //Sums the numbers by the euqation used    
+    //Sums the numbers by the equation used    
 }
 
 function clearEntry() {

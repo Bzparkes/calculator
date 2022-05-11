@@ -45,7 +45,7 @@ button {
     margin: auto;
 }
 
-.summation {
+#summation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
