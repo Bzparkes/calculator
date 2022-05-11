@@ -1,4 +1,5 @@
 const numDisplay = document.querySelector('body > section')
+
 const num1 = document.querySelector('body > div.numbers > button:nth-child(1)');
 const num2 = document.querySelector('body > div.numbers > button:nth-child(2)');
 const num3 = document.querySelector('body > div.numbers > button:nth-child(3)');
@@ -19,8 +20,18 @@ const equalsButton = document.querySelector('body > div.summation > button.equal
 const clearEntryButton = document.querySelector('body > div:nth-child(5) > button.clear-entry');
 const allClearButton = document.querySelector('body > div:nth-child(5) > button.all-clear');
 
-numDisplay.textContent = '0.00';
+// numDisplay.textContent = '0.00';
 
+const arithmatic = document.querySelector('#arithmatic');
+
+// arithmatic.addEventListener('click', e => {
+//     numDisplay.textContent = '';
+// });
+
+arithmatic.addEventListener('click', e => {
+    // numDisplay.textContent += `${e.target.value}`;
+    console.log(e.target.value);
+});
 
 //console.log(num2 * num9)
 
