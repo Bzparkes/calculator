@@ -6,9 +6,7 @@ let placeHolder = numDisplay.textContent = '0.00';
 
 
 arithmatic.addEventListener('click', e => {
-    placeHolder = '';
     numDisplay.textContent += `${e.target.value}`;
-    console.log(e.target.value);
 });
 
 allClear.addEventListener('click', e => {
