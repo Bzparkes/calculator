@@ -10,7 +10,7 @@ header {
     font-weight: bold;
 }
 
-section {
+.display {
     display: flex;
     justify-content: right;
     justify-self: center;
@@ -68,8 +68,8 @@ button {
     font-size: 60px;    
 }
 
-.clear-entry,
-.all-clear {
+#clear-entry,
+#all-clear {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,12 +77,12 @@ button {
     width: 150px;
 }
 
-.clear-entry {
+#clear-entry {
     background-color: whitesmoke;
     color: red;
 }
 
-.all-clear {
+#all-clear {
     background-color: red;
     color: whitesmoke;
 }

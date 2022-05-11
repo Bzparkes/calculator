@@ -1,13 +1,18 @@
-const numDisplay = document.querySelector('body > section')
-
-// numDisplay.textContent = '0.00';
-
+const numDisplay = document.querySelector('.display')
 const arithmatic = document.querySelector('#arithmatic');
+const allClear = document.querySelector('#all-clear');
+
+let placeHolder = numDisplay.textContent = '0.00';
 
 
 arithmatic.addEventListener('click', e => {
+    placeHolder = '';
     numDisplay.textContent += `${e.target.value}`;
     console.log(e.target.value);
+});
+
+allClear.addEventListener('click', e => {
+    numDisplay.textContent = '0.00';
 });
 
 function addition(e) {
