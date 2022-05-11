@@ -22,14 +22,26 @@ const allClearButton = document.querySelector('body > div:nth-child(5) > button.
 
 // numDisplay.textContent = '0.00';
 
-const buttons = document.querySelectorAll('button');
 const arithmatic = document.querySelector('#arithmatic');
+<<<<<<< HEAD
 // console.log(arithmatic);
 
 
 arithmatic.addEventListener('click', e => {
     numDisplay.textContent += `${e.target.value}`;
+=======
+
+// arithmatic.addEventListener('click', e => {
+//     numDisplay.textContent = '';
+// });
+
+arithmatic.addEventListener('click', e => {
+    // numDisplay.textContent += `${e.target.value}`;
+    console.log(e.target.value);
+>>>>>>> 994115f91be387ce3c37983c50f0cca84bf07845
 });
+
+//console.log(num2 * num9)
 
 
 function enterNumber(num) {
@@ -37,7 +49,7 @@ function enterNumber(num) {
      console.log(num);
     //Takes the button pressed, enters that value and prints to display
 }
-
+enterNumber(1)
 
 function addition() {
     return;
