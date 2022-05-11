@@ -24,13 +24,12 @@ const allClearButton = document.querySelector('body > div:nth-child(5) > button.
 
 const buttons = document.querySelectorAll('button');
 const arithmatic = document.querySelector('#arithmatic');
-console.log(arithmatic);
+// console.log(arithmatic);
+
 
 arithmatic.addEventListener('click', e => {
-    // console.log(e);
     numDisplay.textContent += `${e.target.value}`;
 });
-
 
 
 function enterNumber(num) {
